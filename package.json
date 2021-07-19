@@ -1,0 +1,28 @@
+{
+  "name": "instacloneback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elbica/InstaCloneBack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elbica/InstaCloneBack/issues"
+  },
+  "homepage": "https://github.com/elbica/InstaCloneBack#readme",
+  "dependencies": {
+    "apollo-server": "^3.0.1",
+    "graphql": "^15.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

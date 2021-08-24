@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "strict": true,
-
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "removeComments": true,
     "importHelpers": true,
@@ -22,5 +22,5 @@
     }
   },
   "exclude": ["./node_modules"],
-  "include": ["./src/server.ts"]
+  "include": ["./src/**/*"]
 }

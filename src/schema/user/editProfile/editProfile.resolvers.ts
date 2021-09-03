@@ -1,9 +1,10 @@
 import bcrypt from 'bcrypt';
 import client from '../../client';
 import jwt from 'jsonwebtoken';
+import { protectResolver } from '../user.utils';
 export default {
   Mutation: {
-    editProfile: async (
+    editProfile: protectResolver( async (
       _,
       {firstName, lastName, username, email, password},
       {loginedUser},
@@ -27,6 +28,6 @@ export default {
       });
       if (ok.id) return {ok: true};
       else return {ok: false, error: 'Could not update profile.'};
-    },
-  },
+    })
+  })
 };
